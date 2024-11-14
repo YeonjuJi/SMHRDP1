@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+    background-image: url('images/bg.jpg'); /* 백그라운드 이미지 설정 */
+    background-size: cover; /* 이미지가 화면 전체를 덮도록 설정 */
+    background-position: center; /* 이미지를 화면의 중앙에 위치시킴 */
+    background-repeat: no-repeat; /* 이미지가 반복되지 않도록 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+label {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"], input[type="password"] {
+    width: 378px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    color: #aaa;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.check-btn {
+    width: 120px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.id-btn, .submit-btn {
+    width: 48%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.id-btn:hover, .submit-btn:hover, .check-btn:hover {
+    background-color: #45a049;
+}
+
+/* 팝업 창 스타일 */
+#popup {
+    display: none; /* 초기에는 보이지 않음 */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+#popup textarea {
+    width: 100%;
+    height: 200px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+#popup .button-group {
+    text-align: right;
+    margin-top: 10px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}

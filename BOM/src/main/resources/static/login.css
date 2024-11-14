@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+  background: url(images/bg00.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.login-container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 5px rgb(82, 80, 80);
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.login-icon {
+  width: 60px;
+  height: 60px;
+  background: white;
+  box-shadow: 5px 5px 5px 5px rgb(146, 145, 145);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.login-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.login-header h2 {
+  margin: 0;
+  color: #579b55;
+  font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+form label {
+  text-align: left;
+  margin-bottom: 5px;
+  color: #333;
+  font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+form input[type="text"],
+form input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.remember-me input {
+  margin-right: 5px;
+}
+
+button {
+  background: #579b55;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+button:hover {
+  background: #164218;
+}
+
+.extra-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.extra-links a {
+  color: #579b55;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "save.path",
+    "type": "java.lang.String",
+    "description": "A description for 'save.path'"
+  },
+  {
+    "name": "file.upload-dir.board",
+    "type": "java.lang.String",
+    "description": "A description for 'file.upload-dir.board'"
+  }
+]}

@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body,
+section,
+header,
+footer,
+.dropdown {
+  position: relative;
+}
+
+section > *,
+header > *,
+footer > * {
+  position: relative;
+}
+
+body {
+    font-family: 'Pretendard-Regular', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+header {
+    background-image: url('./images/bg.jpg'); /* 첫페이지 이미지를 헤드이미지로 사용해보잣! */
+    background-repeat: no-repeat;
+    background-position: top; /* 이미지의 상단만 보여주기 */
+    background-size: 100% auto; /* 가로를 100%로 채우고, 세로는 자동 크기 조정 */
+    overflow: hidden; /* 헤더 영역 밖의 이미지는 숨김 */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1; /* 헤더의 z-index 설정 (낮은 값) */
+    overflow: visible; /* 헤더 내 요소가 잘리지 않도록 설정 */
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-family: 'Pretendard-Regular', cursive; /* 폰트 변경 */
+}
+
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto; /* 중앙 정렬을 위해 좌우 여백을 자동으로 설정 */
+    width: 100%; /* 너비를 100%로 설정하되, 최대 너비는 1200px로 제한 */
+    display: flex; /* 기존의 flexbox 레이아웃 유지 */
+    justify-content: space-between; /* 요소 간 공간 분배 */
+    align-items: center; /* 세로 정렬 */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a.active {
+    color: #f50c6e;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 30; /* 드롭다운 메뉴가 헤더 위로 오도록 설정 */
+    border-radius: 4px;
+    min-width: 160px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif;
+    overflow: visible; /* 드롭다운 메뉴 내에서 잘리지 않도록 설정 */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9em;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 30; /* 드롭다운 메뉴가 헤더 위로 오도록 설정 */
+    border-radius: 4px;
+    min-width: 160px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif;
+    overflow: visible; /* 드롭다운 메뉴 내에서 잘리지 않도록 설정 */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.product-card .image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 프로필보기 버튼 왼쪽에 여백 */
+.profile-btn{
+	margin-left: 20px;	
+}
+
+/* 프로필 사진 크기 확대 */
+.profile-image{
+	width: 100px;
+	height: 100px;
+}
+
+/* 하트 오른쪽 여백 */
+.favorite-heart{
+	margin-right: 10px;
+}
+
+/* 메뉴 리스트 영역의 크기 조정 */
+.menu-section {
+    width: 100%; /* 섹션 너비를 100%로 설정 */
+    max-width: 1200px; /* 최대 너비 설정 */
+    padding: 10px 20px; /* 섹션 내부에 상하 10px, 좌우 20px의 여백 추가 */
+    background-color: #f2f2f2; /* 배경색 설정 */
+    font-family: 'Pretendard-Regular', Arial, sans-serif;
+    margin: 20px auto; /* 상하 여백 추가 및 중앙 정렬 */
+    box-sizing: border-box; /* padding을 포함하여 크기 계산 */
+}
+
+/* 메뉴 리스트 수정 */
+.menu-list a {
+    font-size: 30px; /* 원하는 글씨 크기 설정 */
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 유지 */
+    color: black; /* 링크 색상 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+    margin: 10px 0; /* 여백 설정 */
+    display: block; /* 블록 형태로 설정 (선택 사항) */
+}
+
+/* 메뉴에 마우스 갖다대면 애니메이션 효과 적용 */
+.list:hover{
+	animation: pulse 1.0s; /* 애니메이션 1초 동안 실행 */
+	color: blue;
+}
+
+/* 닉네임 글씨 크기 확대 및 애니메이션 효과 적용 */
+.username{
+	font-size: 35px;
+	animation: heartBeat 1.0s;
+}
+
+
+.card-photo img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.card-desc {
+    margin-top: 10px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.card-title {
+    margin: 10px 0;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+	font-size: 19px;
+	color: black;
+}
+
+.price {
+    font-size: 1.1em;
+    color: #e74c3c;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.card-region-name {
+    color: #888;
+    margin-top: 5px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.card-counts {
+    margin-top: 10px;
+    color: #888;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.write-btn {
+    background-color: #69c173;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 24px;
+    right: 80px;
+}
+
+.write-btn:hover {
+    background-color: #57a763;
+}
+
+.scroll-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    background-color: #69c173;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.scroll-to-top:hover {
+    background-color: #57a763;
+}

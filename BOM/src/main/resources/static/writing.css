@@ -1,0 +1,423 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body,
+section,
+header,
+footer,
+.dropdown {
+  position: relative;
+}
+
+section > *,
+header > *,
+footer > * {
+  position: relative;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 공통 스타일 */
+body, section, header, footer {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pretendard-Regular', Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+body,
+section,
+header,
+footer,
+.dropdown {
+  position: relative;
+}
+
+section > *,
+header > *,
+footer > * {
+  position: relative;
+}
+
+/* 헤더 스타일 */
+header {
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+    overflow: visible;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* 배경을 투명하게 설정 */
+    box-shadow:none;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-family: 'Pretendard-Regular', cursive; /* 폰트 변경 */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a.active {
+    color: #f50c6e;
+}
+
+/* 드롭다운 스타일 */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    border-radius: 4px;
+    min-width: 160px;
+    padding: 12px 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 기타 스타일 */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.product-card .image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* 프로필보기 버튼 왼쪽에 여백 */
+.profile-btn{
+	margin-left: 20px;	
+}
+
+/* 프로필 사진 크기 확대 */
+.profile-image{
+	width: 100px;
+	height: 100px;
+}
+
+/* 하트 오른쪽 여백 */
+.favorite-heart{
+	margin-right: 10px;
+}
+
+/* 메뉴 리스트 영역의 크기 조정 */
+.menu-section {
+    width: 100%; /* 섹션 너비를 100%로 설정 */
+    max-width: 1200px; /* 최대 너비 설정 */
+    padding: 10px 20px; /* 섹션 내부에 상하 10px, 좌우 20px의 여백 추가 */
+    background-color: #f2f2f2; /* 배경색 설정 */
+    font-family: 'Pretendard-Regular', Arial, sans-serif;
+    margin: 20px auto; /* 상하 여백 추가 및 중앙 정렬 */
+    box-sizing: border-box; /* padding을 포함하여 크기 계산 */
+}
+
+/* 메뉴 리스트 수정 */
+.menu-list a {
+    font-size: 30px; /* 원하는 글씨 크기 설정 */
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 유지 */
+    color: black; /* 링크 색상 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+    margin: 10px 0; /* 여백 설정 */
+    display: block; /* 블록 형태로 설정 (선택 사항) */
+}
+
+/* 메뉴에 마우스 갖다대면 애니메이션 효과 적용 */
+.list:hover{
+	animation: pulse 1.0s; /* 애니메이션 1초 동안 실행 */
+	color: blue;
+}
+
+/* 닉네임 글씨 크기 확대 및 애니메이션 효과 적용 */
+.username{
+	font-size: 35px;
+	animation: heartBeat 1.0s;
+}
+
+
+.card-photo img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.card-desc {
+    margin-top: 10px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.card-title {
+    margin: 10px 0;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+	font-size: 19px;
+	color: black;
+}
+
+.price {
+    font-size: 1.1em;
+    color: #e74c3c;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.card-region-name {
+    color: #888;
+    margin-top: 5px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.card-counts {
+    margin-top: 10px;
+    color: #888;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.write-btn {
+    background-color: #69c173;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 24px;
+    right: 80px;
+}
+
+.write-btn:hover {
+    background-color: #57a763;
+}
+
+.scroll-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    background-color: #69c173;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.scroll-to-top:hover {
+    background-color: #57a763;
+}
+
+
+.upload-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.image-preview {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.image-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+}
+
+.form-container {
+    flex: 1;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+input[type="text"], textarea, select {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+textarea {
+    resize: none;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.file-select-btnx {
+    background-color: #69c173;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: inline-block;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.file-select-btnx:hover {
+    background-color: #57a763;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.submit-btn {
+    background-color: #69c173;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 추가 */
+}
+
+.submit-btn:hover {
+    background-color: #57a763;
+}
+
+
+.back-btn {
+    margin-left: 320px;
+    padding: 10px 20px;
+    background-color: #69c173;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 변경 */
+}
+
+.back-btn:hover {
+    background-color: #57a763;
+}
+
+.change-btn, .del-btn {
+  background-color: #76ce6f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-right: 10px; /* 버튼 사이의 간격 */
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Pretendard-Regular', Arial, sans-serif; /* 폰트 변경 */
+}
+
+.change-btn:hover, .del-btn:hover {
+  background-color: #76ce6f;
+}

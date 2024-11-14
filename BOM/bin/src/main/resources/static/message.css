@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    padding: 10px 0;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+.logo h1 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+nav ul li a {
+    color: white;
+    padding: 12px 10px;
+    display: block;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+/* Main Content */
+main {
+    padding: 30px;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+.tab-link {
+    background-color: #ddd;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+.tab-link.active {
+    background-color: #4CAF50;
+    color: white;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+.tab-link:hover {
+    background-color: #ccc;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+/* Message Table */
+.message-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+.message-table th, .message-table td {
+    border: none;
+    padding: 15px 20px;
+    text-align: left;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+.message-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    border-radius: 6px 6px 0 0;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+.message-table td {
+    background-color: white;
+    border-bottom: 2px solid #eaeaea;
+    font-size: 16px;
+    color: #555;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+.message-table tr:hover td {
+    background-color: #f1f1f1;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+/* Button Styles */
+.reply-btn, .delete-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+.reply-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.reply-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
+
+/* Add a background color to the dropdown button when the dropdown content is shown */
+.dropdown:hover .u-nav-link {
+    background-color: #3e8e41;
+    font-family: 'Pretendard-Regular', 'Poppins', sans-serif; /* 폰트 변경 */
+}
